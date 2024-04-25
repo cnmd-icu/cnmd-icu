@@ -9,27 +9,25 @@ export const zhNavbar = navbar([
     children: [
       {
         text: "代码笔记",
-        prefix:"/posts/",
+        prefix: "/posts/",
         children: [
-          { text: "iOS笔记", icon: "hk-apple", link: "iOS/" },
+          // { text: "iOS笔记", icon: "hk-apple", link: "iOS/" },
           { text: "前端笔记", icon: "code", link: "Web/" },
           { text: "Linux", icon: "linux", link: "Linux/" },
           { text: "Python", icon: "python", link: "Python/" },
-          { text: "Rust", icon: "hk-rust", link: "Rust/" },
-          { text: "React", icon: "react", link: "cross-platform/ReactNative/" },
-          {
-            text: "Flutter",
-            icon: "hk-flutter",
-            link: "cross-platform/Flutter/",
-          },
+          // { text: "Rust", icon: "hk-rust", link: "Rust/" },
+          // { text: "React", icon: "react", link: "cross-platform/ReactNative/" },
+          // {
+          //   text: "Flutter",
+          //   icon: "hk-flutter",
+          //   link: "cross-platform/Flutter/",
+          // },
         ],
       },
       {
         text: "博客相关",
-        prefix:"/blog/",
-        children: [
-          { text: "博客相关", icon: "blog", link: "" },
-        ],
+        prefix: "/blog/",
+        children: [{ text: "博客相关", icon: "blog", link: "" }],
       },
     ],
   },
@@ -61,9 +59,9 @@ export const zhNavbar = navbar([
   {
     text: "关于",
     icon: "info",
-    children:[
+    children: [
       { text: "关于我", icon: "people", link: "/intro" },
       { text: "关于本站", icon: "info", link: "/about" },
-    ]
+    ],
   },
 ]);

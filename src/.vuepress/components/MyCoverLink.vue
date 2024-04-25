@@ -204,4 +204,5 @@ a.card-body {
   filter: opacity(0.5) blur(10px) saturate(0.5) brightness(0.5);
   transform: scale(0.96);
   transition: all var(--transform-transition);
-}</style>
+}
+</style>

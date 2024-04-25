@@ -6,13 +6,13 @@ import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { canvasPlugin, CanvasPluginType } from "./plugins/vuepress-plugin-canvas";
 import { live2DAssistPlugin } from "./plugins/vuepress-plugin-live2DAssist";
 import { gradientCoverPlugin } from "./plugins/vuepress-plugin-gradient-cover";
-import theme from "./theme.js";
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
 import { PopperShape } from "@moefy-canvas/theme-popper";
 import { hitokotoPlugin } from "./plugins/vuepress-plugin-hitokoto";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-// import metingPlugin from "vuepress-plugin-meting2";
+// import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import metingPlugin from "vuepress-plugin-meting2";
+import theme from "./theme.js";
 
 const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
@@ -22,8 +22,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Oragekk's Blog",
-      description: "上冬十二的博客",
+      title: "三个三",
+      description: "三个三的主页",
     },
   },
   alias: {
@@ -52,15 +52,16 @@ export default defineUserConfig({
     // vuePluginOptions: {},
   }),
   plugins: [
-    // metingPlugin({
-    //   metingOptions: {
-    //     global: true,
-    //     server: "tencent",
-    //     api: "https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r",
-    //     type: "playlist",
-    //     mid: "851947617",
-    //   },
-    // }),
+    //音乐插件
+    metingPlugin({
+      metingOptions: {
+        global: true,
+        server: "netease", //netease, tencent, xiami
+        api: "https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r",
+        type: "playlist",
+        mid: "2187512476", // 网易云歌单id
+      },
+    }),
     // 代码高亮
     shikiPlugin({
       theme: "one-dark-pro",
@@ -90,17 +91,11 @@ export default defineUserConfig({
     }),
     // 遮罩插件
     gradientCoverPlugin({}),
-    // 谷歌统计
-    googleAnalyticsPlugin({
-      // 配置项
-      id: "111",
-      debug: false,
-    }),
     // 搜索插件
     docsearchPlugin({
-      appId: "PI9QTF572N",
-      apiKey: "07e2432555d8ecdd3fb72978f0a05cdc",
-      indexName: "oragekk",
+      appId: "OPKR5M4ODX",
+      apiKey: "86538b8464510cb1211d679f6d18b7d2",
+      indexName: "三个三",
       locales: {
         "/": {
           placeholder: "搜索内容",

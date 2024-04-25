@@ -1,16 +1,5 @@
 <template>
   <footer class="footer-wrapper" v-show="enable">
-    <div class="busuanzi">
-      <span id="busuanzi_container_site_pv" style="display: none">
-        本站总访问量
-        <span id="busuanzi_value_site_pv"></span>次
-        <span class="post-meta-divider">|</span>
-      </span>
-      <span id="busuanzi_container_site_uv" style="display: none">
-        您是本站第
-        <span id="busuanzi_value_site_uv"></span>位访问者
-      </span>
-    </div>
     <div class="footer-content">
       <div class="footer" v-html="content"></div>
       <div class="copyright">{{ copyright }}</div>
@@ -31,9 +20,6 @@
           style="width: auto; height: 32px"
           title="开往-友链接力"
       /></a>
-      <!-- <a href="https://www.foreverblog.cn/" target="_blank">
-        <img src="https://img.foreverblog.cn/logo_en_default.png" alt="" style="width: auto; height: 16px" />
-      </a> -->
     </div>
   </footer>
 </template>
@@ -47,7 +33,6 @@ import {
   useThemeLocaleData,
 } from "@theme-hope/composables/index";
 import { useRouter } from "vue-router";
-import script from "../utils/busuanzi.pure";
 import { show_runtime } from "../utils/time";
 import { ref } from "vue";
 import { useDarkmode } from "@theme-hope/modules/outlook/composables/index";
@@ -57,14 +42,6 @@ const wormhole = computed(() => {
   return dartmode.status.value == "dark"
     ? "https://img.foreverblog.cn/wormhole_3.gif"
     : "https://img.foreverblog.cn/wormhole_1.gif";
-});
-// 或取 当前vue-router 实例
-const router = useRouter();
-// 可以直接侦听一个 ref
-watch(router.currentRoute, async (to, from) => {
-  if (to.path != from.path) {
-    script.fetch();
-  }
 });
 onMounted(() => {
   show_runtime();
@@ -93,7 +70,7 @@ const copyright = computed(() =>
     : "copyright" in themeLocale.value
     ? themeLocale.value.copyright
     : author.value.length
-    ? `Copyright © 2016-${new Date().getFullYear()} ${author.value[0].name}`
+    ? `Copyright © 2024-${new Date().getFullYear()} ${author.value[0].name}`
     : false
 );
 const bgImage = ref("");

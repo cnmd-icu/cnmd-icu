@@ -1,12 +1,12 @@
 import { onMounted } from "vue";
 import { defineClientConfig } from "vuepress/client";
+import "vuepress-theme-hope/presets/bounce-icon.scss";
 import NotFound from "./theme/layouts/NotFound.vue";
 import Layout from "./theme/layouts/Layout.vue";
 import News from "./theme/layouts/News.vue";
 import Wormhole from "./theme/components/Wormhole";
 import Travelling from "./theme/components/Travelling";
-import "vuepress-theme-hope/presets/bounce-icon.scss";
-import packageJson from '../../package.json';
+import packageJson from "../../package.json";
 export default defineClientConfig({
   // 你可以在这里覆盖或新增布局
   layouts: {
@@ -21,7 +21,7 @@ export default defineClientConfig({
   setup: () => {
     onMounted(() => {
       console.log(
-        `%c ✨上冬十二的博客 v${packageJson.version}✨ %c ✨Oragekk's Blog✨ %c\n
+        `%c ✨三个三的博客 v${packageJson.version}✨ %c ✨www.cnmd.icu✨ %c\n
                你，对，你，就是你\n
                   🍻- ( ゜- ゜)つロ 乾杯~🍻\n
                           ---- 最是春风留不住，徒留我孤直。\n
@@ -31,5 +31,5 @@ export default defineClientConfig({
         `color: #51c4d3; font-size:12px;`
       );
     });
-  }
+  },
 });

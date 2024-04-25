@@ -1,9 +1,13 @@
+/**
+ * 在页脚显示小破站运行时间
+ * @description: 计算小破站运行时间
+ */
 export const show_runtime = (): void => {
-  const startTime = new Date("10/31/2016 10:00:00").toString();
+  const startTime = new Date("4/1/2024 10:00:00").toString();
   window.setTimeout(show_runtime, 1000);
   const longtime = calculateTimePassed(startTime);
   const el = document.getElementById("runtime_span");
-  el && (el.innerHTML = `小破站已萌萌哒运行: ${longtime}`);
+  el && (el.innerHTML = `小破站已运行: ${longtime}`);
 };
 
 const isLeapYear = (year: number): boolean => {
@@ -47,11 +51,7 @@ const calculateTimePassed = (startTime: string): string => {
   // Adjust for months
   if (days < 0) {
     const previousMonth = now.getMonth() - 1 < 0 ? 11 : now.getMonth() - 1;
-    const daysInPreviousMonth = new Date(
-      now.getFullYear(),
-      previousMonth + 1,
-      0
-    ).getDate();
+    const daysInPreviousMonth = new Date(now.getFullYear(), previousMonth + 1, 0).getDate();
     days += daysInPreviousMonth;
     months--;
   }

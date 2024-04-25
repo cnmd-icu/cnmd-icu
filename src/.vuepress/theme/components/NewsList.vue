@@ -5,11 +5,12 @@
       共{{ items.length }}条碎碎念~ (｡♥‿♥｡)
     </p>
     <figure>
-      <img
+      <!-- <img
         class="news-top-img"
-        src="https://api.vvhan.com/api/acgimg"
+        src="https://api.vvhan.com/api/visitor.info"
         alt="图"
-      />
+      /> -->
+      <div style="font-size: small;"><p>{{visitorInfo}}</p></div>
     </figure>
     <template v-if="currentArticles.length">
       <template v-for="({ info, path }, index) in currentArticles">
@@ -64,12 +65,18 @@ const updatePage = (page: number) => {
   void router.push({ path: route.path, query });
 };
 const hitokotoContent = ref('');
+const visitorInfo = ref({});
 
 // 获取一言
+//获取访客信息
 (async function () {
   const res = await HitokotoApi.request();
   if (res.status == 200) {
     hitokotoContent.value = res.data.hitokoto;
+  }
+   const res2 = await HitokotoApi.requestVisitorInfo();
+  if (res2.data.success) {
+    visitorInfo.value = res2.data;
   }
 })();
 onMounted(() => {
