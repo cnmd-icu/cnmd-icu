@@ -29,12 +29,14 @@ jobs:
 
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
+        
+      - name: 清理旧的构建输出
+        run: rm -rf src/.vuepress/dist
 
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          rm -rf src/.vuepress/dist
           pnpm build
           > src/.vuepress/dist
 
