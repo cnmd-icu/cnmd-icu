@@ -35,7 +35,7 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm build
-          > src/.vuepress/dist/.nojekyll
+          > src/.vuepress/dist
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
@@ -44,3 +44,4 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
           token: ${{ secrets.PAT_TOKEN }}
+          clean: true # 清理旧文件
