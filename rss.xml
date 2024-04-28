@@ -6,8 +6,8 @@
     <link>https://cnmd.icu/</link>
     <description>三个三的主页</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 27 Apr 2024 09:18:33 GMT</pubDate>
-    <lastBuildDate>Sat, 27 Apr 2024 09:18:33 GMT</lastBuildDate>
+    <pubDate>Sun, 28 Apr 2024 09:26:30 GMT</pubDate>
+    <lastBuildDate>Sun, 28 Apr 2024 09:26:30 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
@@ -182,40 +182,100 @@
       <link>https://cnmd.icu/intro.html</link>
       <guid>https://cnmd.icu/intro.html</guid>
       <source url="https://cnmd.icu/rss.xml">关于我</source>
-      <description>关于我 Profile Exploration &amp; geek enthusiast, full-stack front-end engineer, UX Designer | Currently focusing on cross-platform development with main directions in iOS, ReactNative...</description>
+      <description>关于我 Profile I&amp;apos;m 三个三 , A senior front-end engineer👨‍💻 and amateur angler🎣. working since 2018 till now🚀 🎡 I am from Nanxi, Yibin, Sichuan. 🌱 I started self-learning program...</description>
       <category>About</category>
       <pubDate>Sun, 12 Mar 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 
 <h2>Profile</h2>
-<p><em>Exploration &amp; geek enthusiast, full-stack front-end engineer, UX Designer | Currently focusing on cross-platform development with main directions in iOS, ReactNative, Flutter, and Vue | Discovering a bigger world together with you.</em></p>
+<p>I'm 三个三 , A senior front-end engineer👨‍💻  and amateur angler🎣. working since 2018 till now🚀</p>
+<ul>
+<li>
+<p>🎡 I am from Nanxi, Yibin, Sichuan.</p>
+</li>
+<li>
+<p>🌱 I started self-learning programming in middle school, and now I have 7 years of experience..</p>
+</li>
+<li>
+<p>🕷️ My main technical areas are web development, backend development, app development, and mini-program development.</p>
+</li>
+<li>
+<p>❓ I am currently a fresh graduate.</p>
+</li>
+<li>
+<p>💫  My goal is to make money and save for retirement.</p>
+</li>
+</ul>
 <div class="hint-container tip">
-<p class="hint-container-title">Profile</p>
-<p>探索 &amp; 极客 爱好者，大前端工程师，用户体验设计师 |目前主要研究方向在跨平台开发上，iOS、ReactNative、Flutter、Vue是主要方向| 期待与你一起发现更大的世界</p>
+<p class="hint-container-title">My Tags</p>
+<p>探索 &amp; 极客 爱好者，前端工程师，用户体验设计师，后端工程师，全栈工程师，产品经理，创业者，摄影师，游戏爱好者，音乐爱好者，喜欢猫猫狗狗</p>
 </div>
 <h2>Skills</h2>
-<h3>Languages</h3>
-<img src="https://skillicons.dev/icons?i=c,cs,swift,javascript,ts,dart,python,html,css,java,regex,md,sass,bash&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
-<h3>Frameworks</h3>
-<img src="https://skillicons.dev/icons?i=flutter,vue,nodejs,react,reactivex,redux,dotnet&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
-<h3>Databases</h3>
-<img src="https://skillicons.dev/icons?i=sqlite,mysql,redis&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
-<h3>Hardwares</h3>
-<img src="https://skillicons.dev/icons?i=raspberrypi&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
-<h3>Others</h3>
-<img src="https://skillicons.dev/icons?i=vim,visualstudio,vscode,androidstudio,aws,figma,gradle,gcp,git,github,gitlab,idea,jenkins,linux,postman,powershell,linkedin,stackoverflow,svg,tensorflow,twitter&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
-<h2>Github Summary</h2>
-<img src="https://github-trophies.vercel.app/?username=oragekk&amp;theme=radical&amp;margin-w=25" alt="Github Summary">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oragekk&amp;theme=radical&amp;layout=compact&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
-<img src="https://github-readme-stats.vercel.app/api?username=oragekk&amp;count_private=true&amp;show_icons=true&amp;theme=radical&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
+<p><br></p><div align="center"><img src="https://count.getloli.com/get/@:ersb-cn" alt=":ersb-cn"></div><br><p></p>
+<p>
+  <img src="https://weather-icon.journeyad.repl.co/@ersb-cn?v=1" align="right">
+</p>
+<br>  
+<h2>My Skill Set</h2>
+<table><tbody><tr><td valign="top" width="33%">
+<h3>Frontend</h3>
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/vuejs-original-wordmark.svg" alt="Vue.js" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/electron-original.svg" alt="Electron" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/logo-title.svg" alt="Chart.js" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gulp-plain.svg" alt="gulp.js" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/sass-original.svg" alt="Sass" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50">  
+</div>
+</td><td valign="top" width="33%">
+<h3>Backend</h3>
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50">
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50">  
+</div>
+</td><td valign="top" width="33%">
+<h3>DevOps</h3>
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/kubernetes-icon.svg" alt="Kubernetes" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nginx-original.svg" alt="Nginx" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/redis-original-wordmark.svg" alt="Redis" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jenkins-icon.svg" alt="Jenkins" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/oracle-original.svg" alt="Oracle" height="50">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg" alt="Docker" height="50">
+</div>
+</td></tr></tbody></table>  
+<br>  
+<h2>Github Stats</h2>
+<table><tbody><tr><td valign="top" width="50%">
+<img src="https://github-readme-stats.vercel.app/api?username=ersb-cn&amp;show_icons=true&amp;count_private=true&amp;hide_border=true" align="left" style="width: 100%">
+</td><td valign="top" width="50%">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ersb-cn&amp;hide_border=true&amp;layout=compact" align="left" style="width: 100%">
+</td></tr></tbody></table>  
+<br>  
+<br>
+<br>  
 <h2>Preview</h2>
-<figure><img src="https://count.getloli.com/get/@:oragekk?theme=gelbooru-h" alt=":Augenestern-creator" tabindex="0" loading="lazy"><figcaption>:Augenestern-creator</figcaption></figure>
+<figure><img src="https://count.getloli.com/get/@:ersb-cn?theme=gelbooru-h" alt=":Augenestern-creator" tabindex="0" loading="lazy"><figcaption>:Augenestern-creator</figcaption></figure>
 <h2>Activity Graph</h2>
 <figure><a href="https://github.com/ersb-cn" target="_blank" rel="noopener noreferrer"><img src="https://github-readme-activity-graph-sandy.vercel.app/graph?username=ersb-cn&amp;theme=dracula" alt="Ashutosh's github activity graph" tabindex="0" loading="lazy"></a><figcaption>Ashutosh's github activity graph</figcaption></figure>
 <h2>关于本站</h2>
 <p><a href="/about">传送门</a></p>
 ]]></content:encoded>
-      <enclosure url="https://count.getloli.com/get/@:oragekk?theme=gelbooru-h" type="image/"/>
+      <enclosure url="https://count.getloli.com/get/@:ersb-cn?theme=gelbooru-h" type="image/"/>
     </item>
     <item>
       <title>如何利用GitHub Action提交URL到搜索引擎</title>
