@@ -6,8 +6,8 @@
     <link>https://cnmd.icu/</link>
     <description>三个三的主页</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 28 Apr 2024 09:26:30 GMT</pubDate>
-    <lastBuildDate>Sun, 28 Apr 2024 09:26:30 GMT</lastBuildDate>
+    <pubDate>Sun, 28 Apr 2024 09:32:51 GMT</pubDate>
+    <lastBuildDate>Sun, 28 Apr 2024 09:32:51 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
@@ -2214,7 +2214,7 @@ Jenkins 需要安装 GitLab Plugin 插件，然后配置 <strong>webhook</strong
 <li>使用 Chrome Performance 查找性能瓶颈</li>
 </ul>
 ]]></content:encoded>
-      <enclosure url="https://w.wallhaven.cc/full/57/wallhaven-577og5.jpg" type="image/jpeg"/>
+      <enclosure url="https://cnmd.icu/assets/background/1.png" type="image/png"/>
     </item>
     <item>
       <title>Vue2响应式原理解析</title>
