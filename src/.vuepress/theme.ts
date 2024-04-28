@@ -198,7 +198,7 @@ export default MyTheme({
 
     // uncomment these if you want a PWA
     pwa: {
-      favicon: "/favicon.ico",
+      favicon: "/favicon.svg",
       cacheHTML: true,
       // cachePic: true,
       appendBase: true,

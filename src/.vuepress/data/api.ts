@@ -4,7 +4,7 @@ export const api: LinkData[] = [
   {
     name: "姬长信API For Docker",
     desc: "一个开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务和公益大数据的平台.",
-    icon: "/assets/github.svg",
+    icon: "/assets/icon/github.svg",
     link: "https://api.isoyu.com/",
   },
   {

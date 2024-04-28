@@ -13,36 +13,105 @@ comment: false
 [[toc]]
 
 ## Profile
-_Exploration & geek enthusiast, full-stack front-end engineer, UX Designer | Currently focusing on cross-platform development with main directions in iOS, ReactNative, Flutter, and Vue | Discovering a bigger world together with you._
+I'm 三个三 , A senior front-end engineer👨‍💻  and amateur angler🎣. working since 2018 till now🚀
 
-:::tip Profile
-探索 & 极客 爱好者，大前端工程师，用户体验设计师 |目前主要研究方向在跨平台开发上，iOS、ReactNative、Flutter、Vue是主要方向| 期待与你一起发现更大的世界
+- 🎡 I am from Nanxi, Yibin, Sichuan.  
+  
+- 🌱 I started self-learning programming in middle school, and now I have 7 years of experience..  
+  
+- 🕷️ My main technical areas are web development, backend development, app development, and mini-program development.
+
+- ❓ I am currently a fresh graduate.  
+  
+- 💫  My goal is to make money and save for retirement.
+  
+:::tip My Tags
+探索 & 极客 爱好者，前端工程师，用户体验设计师，后端工程师，全栈工程师，产品经理，创业者，摄影师，游戏爱好者，音乐爱好者，喜欢猫猫狗狗
 :::
+
 ## Skills
-### Languages
-<img src="https://skillicons.dev/icons?i=c,cs,swift,javascript,ts,dart,python,html,css,java,regex,md,sass,bash&theme=dark&&perline=10" alt="Skills"/>
+<br><div align="center"><img src="https://count.getloli.com/get/@:ersb-cn" alt=":ersb-cn" /></div></br>
+<p>
+  <img src="https://weather-icon.journeyad.repl.co/@ersb-cn?v=1" align="right">
+</p>
+<br/>  
 
-### Frameworks
-<img src="https://skillicons.dev/icons?i=flutter,vue,nodejs,react,reactivex,redux,dotnet&theme=dark&&perline=10" alt="Skills"/>
+## My Skill Set  
 
-### Databases
-<img src="https://skillicons.dev/icons?i=sqlite,mysql,redis&theme=dark&&perline=10" alt="Skills"/>
+<table><tr><td valign="top" width="33%">
 
-### Hardwares
-<img src="https://skillicons.dev/icons?i=raspberrypi&theme=dark&&perline=10" alt="Skills"/>
+### Frontend  
 
-### Others
-<img src="https://skillicons.dev/icons?i=vim,visualstudio,vscode,androidstudio,aws,figma,gradle,gcp,git,github,gitlab,idea,jenkins,linux,postman,powershell,linkedin,stackoverflow,svg,tensorflow,twitter&theme=dark&&perline=10" alt="Skills"/>
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/vuejs-original-wordmark.svg" alt="Vue.js" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/electron-original.svg" alt="Electron" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/logo-title.svg" alt="Chart.js" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gulp-plain.svg" alt="gulp.js" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/sass-original.svg" alt="Sass" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jquery.png" alt="jQuery" height="50" />  
+</div>
 
+</td><td valign="top" width="33%">
 
-## Github Summary
+### Backend  
 
-<img src="https://github-trophies.vercel.app/?username=oragekk&theme=radical&margin-w=25" alt="Github Summary"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oragekk&theme=radical&layout=compact&bg_color=30,ef475d,904e95&title_color=fff&text_color=fff" />
-<img src="https://github-readme-stats.vercel.app/api?username=oragekk&count_private=true&show_icons=true&theme=radical&bg_color=30,ef475d,904e95&title_color=fff&text_color=fff" />
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50" />
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50" />  
+
+</div>
+
+</td><td valign="top" width="33%">
+
+### DevOps  
+
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/kubernetes-icon.svg" alt="Kubernetes" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nginx-original.svg" alt="Nginx" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/redis-original-wordmark.svg" alt="Redis" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/jenkins-icon.svg" alt="Jenkins" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/oracle-original.svg" alt="Oracle" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg" alt="Docker" height="50" />
+
+</div>
+
+</td></tr></table>  
+
+<br/>  
+
+## Github Stats  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api?username=ersb-cn&show_icons=true&count_private=true&hide_border=true" align="left" style="width: 100%" />
+
+</td><td valign="top" width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ersb-cn&hide_border=true&layout=compact" align="left" style="width: 100%" />
+
+</td></tr></table>  
+
+<br/>  
+<br />
+  
+<br/>  
 
 ## Preview
-![:Augenestern-creator](https://count.getloli.com/get/@:oragekk?theme=gelbooru-h)
+![:Augenestern-creator](https://count.getloli.com/get/@:ersb-cn?theme=gelbooru-h)
 
 ## Activity Graph
  [![Ashutosh's github activity graph](https://github-readme-activity-graph-sandy.vercel.app/graph?username=ersb-cn&theme=dracula)](https://github.com/ersb-cn)
