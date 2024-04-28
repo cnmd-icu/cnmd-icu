@@ -5,7 +5,7 @@ icon: home
 title: 主页
 heroImage: https://q1.qlogo.cn/g?b=qq&nk=2029364173&s=640
 heroText: 三个三
-bgImage: "/assets/background/1.png"
+bgImage: "/assets/background/4.png"
 heroFullScreen: true
 tagline: Goals determine what you are going to be. —— Julius Erving
 description: 「一生短暂，过程很美」 致力于分享自己涉及和了解的内容，包括但不限于编程语言、AI体验、世界探索者、极客知识| Exploration & geek enthusiast，Full-stack Front-end Engineer，UX Designer | 与你一起发现更大的世界。
