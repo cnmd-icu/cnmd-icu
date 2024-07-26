@@ -1,3 +1,4 @@
+declare module "@moefy-canvas/theme-popper";
 declare module "*.vue" {
   import { DefineComponent } from "vue";
   const component: DefineComponent<{}, {}, any>;

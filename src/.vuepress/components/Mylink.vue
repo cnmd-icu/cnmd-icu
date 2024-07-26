@@ -33,9 +33,9 @@ const props = defineProps({
 let linkDatas: LinkData[];
 console.log(props.links);
 
-linkDatas = props.links
+linkDatas = props.links || [];
 
-const GetColorClassName = (index) => {
+const GetColorClassName = (index: number) => {
   const Idx = index % 9;
   return `project${Idx}`;
 };

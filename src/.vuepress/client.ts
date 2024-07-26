@@ -21,7 +21,7 @@ export default defineClientConfig({
   setup: () => {
     onMounted(() => {
       console.log(
-        `%c ✨三个三的博客 v${packageJson.version}✨ %c ✨www.cnmd.icu✨ %c\n
+        `%c 欢迎光临 ✨${packageJson.config.author}的e站 v${packageJson.version}✨ %c ✨${packageJson.config.homepage}✨ %c\n
                你，对，你，就是你\n
                   🍻- ( ゜- ゜)つロ 乾杯~🍻\n
                           ---- 最是春风留不住，徒留我孤直。\n

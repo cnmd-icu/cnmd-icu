@@ -16,7 +16,7 @@ head:
 projects:
   - icon: https://q1.qlogo.cn/g?b=qq&nk=2029364173&s=640
     name: 关于本站
-    desc: 这里有关于我的详细介绍哦~
+    desc: 我在这里分享了自己的一些经验和知识，希望能够帮助到你。
     link: /about
 
   - icon: /assets/icon/link.svg

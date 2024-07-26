@@ -5,7 +5,7 @@ article: false
 ---
 
 # 留言板 ✨
-![](https://tenapi.cn/v2/acg)
+
 
 :::: tip 博主留言✨📒
 欢迎来到留言板，这里是一个和时间无关的地方，一个让你的思绪在文字间蔓延的角落。
@@ -19,3 +19,4 @@ article: false
 
 ::::
 
+<img src="https://files.codelife.cc/wallhaven/full/l3/wallhaven-l3rqzr.png" alt=":ersb-cn" />

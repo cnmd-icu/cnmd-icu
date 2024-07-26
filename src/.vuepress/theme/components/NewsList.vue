@@ -5,11 +5,6 @@
       共{{ items.length }}条碎碎念~ (｡♥‿♥｡)
     </p>
     <figure>
-      <!-- <img
-        class="news-top-img"
-        src="https://api.vvhan.com/api/visitor.info"
-        alt="图"
-      /> -->
       <div style="font-size: small;"><p>{{visitorInfo}}</p></div>
     </figure>
     <template v-if="currentArticles.length">
@@ -92,12 +87,13 @@ onMounted(() => {
     }
   watch(currentPage, () => {
     // list top border distance
-    const distance =
-      document.querySelector("#article-list").getBoundingClientRect().top +
-      window.scrollY;
-    setTimeout(() => {
-      window.scrollTo(0, distance);
-    }, 100);
+    const articleList = document.querySelector("#article-list");
+    if (articleList) {
+      const distance = articleList.getBoundingClientRect().top + window.scrollY;
+      setTimeout(() => {
+        window.scrollTo(0, distance);
+      }, 100);
+    }
   });
   // FIXME: Workaround for https://github.com/vuepress/vuepress-next/issues/1249
   watch(

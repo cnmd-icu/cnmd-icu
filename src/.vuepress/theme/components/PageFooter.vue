@@ -32,9 +32,9 @@ import {
   usePageAuthor,
   useThemeLocaleData,
 } from "@theme-hope/composables/index";
-import { useRouter } from "vue-router";
+// import { useRouter } from "vue-router";
 import { show_runtime } from "../utils/time";
-import { ref } from "vue";
+// import { ref } from "vue";
 import { useDarkmode } from "@theme-hope/modules/outlook/composables/index";
 const dartmode = useDarkmode();
 
@@ -73,17 +73,17 @@ const copyright = computed(() =>
     ? `Copyright © 2024-${new Date().getFullYear()} ${author.value[0].name}`
     : false
 );
-const bgImage = ref("");
+// const bgImage = ref("");
 
-onMounted(() => {
-  const defaultHeroBgImagePath = window.localStorage.getItem("bgImage");
-  bgImage.value = `url(${defaultHeroBgImagePath})`;
-});
+// onMounted(() => {
+//   const defaultHeroBgImagePath = window.localStorage.getItem("bgImage");
+//   bgImage.value = `url(${defaultHeroBgImagePath})`;
+// });
 </script>
 
 <style lang="scss">
 .footer-wrapper {
-  background-image: v-bind(bgImage);
+  //background-image: v-bind(bgImage);
 }
 
 .footer-wrapper:before {

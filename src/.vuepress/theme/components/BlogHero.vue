@@ -11,10 +11,7 @@ import {
   h,
   ref,
   nextTick,
-  createApp,
-  watchEffect,
   watch,
-  provide,
 } from "vue";
 import DropTransition from "@theme-hope/components/transitions/DropTransition";
 import { SlideDownIcon } from "@theme-hope/modules/blog/components/icons/icons.js";

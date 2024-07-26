@@ -1,18 +1,19 @@
 import { MyTheme } from "./theme/index";
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
+import packageJson from "../../package.json";
 
 export default MyTheme({
   hotReload: true,
-  hostname: "https://cnmd.icu",
+  hostname: packageJson.config.introduce,
   themeColor: true,
   fullscreen: true,
   author: {
-    name: "thiszhc",
-    url: "https://cnmd.icu",
+    name: packageJson.config.author,
+    url: packageJson.config.homepage,
   },
-  logo: "https://q1.qlogo.cn/g?b=qq&nk=2029364173&s=640",
-  repo: "https://github.com/ersb-cn/blog",
+  logo: packageJson.config.logo,
+  repo: packageJson.config.github,
   docsDir: "src", // 文档目录
 
   iconAssets: [
@@ -29,7 +30,7 @@ export default MyTheme({
   },
 
   blog: {
-    name: "三个三",
+    name: packageJson.config.author,
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
@@ -37,12 +38,12 @@ export default MyTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      Email: "mailto:2029364173@qq.com",
+      Email: `mailto:${packageJson.email}`,
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
-      GitHub: "https://github.com/ersb-cn/blog",
+      GitHub: packageJson.config.github,
       // Gitlab: "https://example.com",
       // Gmail: "mailto:oragekk@gmail.com",
       // Instagram: "https://example.com",
@@ -51,7 +52,7 @@ export default MyTheme({
       // Linkedin: "https://example.com",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
-      QQ: "https://qm.qq.com/q/MQw7B6OjEk",
+      QQ: packageJson.config.addQQUrl,
       // Qzone: "https://example.com",
       // Reddit: "https://example.com",
       Rss: "./rss.xml",
@@ -80,7 +81,7 @@ export default MyTheme({
       footer: "默认页脚",
       displayFooter: false,
       blog: {
-        description: "到最后，竟庆幸于夕阳仍留在身上",
+        description: packageJson.config.introduce,
         intro: "/intro.html",
       },
       // page meta
@@ -89,7 +90,7 @@ export default MyTheme({
       }, // page meta
     },
   },
-  navbarAutoHide: "always", // 顶部导航栏自动隐藏 always, mobile, never
+  navbarAutoHide: "always", // 顶部导航栏自动隐藏 always=总是隐藏，never=总是显示
   // 加密
   encrypt: {
     config: {
@@ -148,8 +149,8 @@ export default MyTheme({
     },
     prismjs: false,
     copyright: {
-      author: "三个三",
-      license: "CC BY-NC-SA 4.0",
+      author: packageJson.config.author,
+      license: packageJson.config.license,
       global: true,
     },
     // all features are enabled for demo, only preserve features you need here

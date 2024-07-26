@@ -13,6 +13,7 @@ import { shikiPlugin } from "@vuepress/plugin-shiki";
 // import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import metingPlugin from "vuepress-plugin-meting2";
 import theme from "./theme.js";
+import packageJson from "../../package.json";
 
 const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
@@ -22,8 +23,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "三个三",
-      description: "三个三的主页",
+      title: packageJson.config.author,
+      description: packageJson.description,
     },
   },
   alias: {
@@ -59,7 +60,7 @@ export default defineUserConfig({
         server: "netease", //netease, tencent, xiami
         api: "https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r",
         type: "playlist",
-        mid: "2187512476", // 网易云歌单id
+        mid: packageJson.config.muisModelId, // 网易云歌单id
       },
     }),
     // 代码高亮

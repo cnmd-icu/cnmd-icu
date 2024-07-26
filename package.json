@@ -1,7 +1,23 @@
 {
-  "name": "ersb-bLog",
+  "name": "cnmd.icu",
   "version": "1.0",
-  "description": "我的个人主页",
+  "description": "个人分享e站",
+  "email": "2029364173@qq.com",
+  "keywords": [
+    "cnmd.icu",
+    "三个三",
+    "loaduser"
+  ],
+  "config": {
+    "author": "三个三",
+    "license": "CC BY-NC-SA 4.0",
+    "introduce": "我见青山多妩媚，料青山见我应如是。",
+    "homepage": "https://cnmd.icu",
+    "github": "https://github.com/cnmd-icu",
+    "addQQUrl": "https://qm.qq.com/q/MQw7B6OjEk",
+    "logo": "https://q1.qlogo.cn/g?b=qq&nk=2029364173&s=640",
+    "muisModelId": "2187512476"
+  },
   "license": "MIT",
   "type": "module",
   "scripts": {
