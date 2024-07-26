@@ -16,17 +16,18 @@ jobs:
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
           submodules: true # 检出子模块 
+
+      - name: Install pnpm # 安装 pnpm
+        uses: pnpm/action-setup@v2 # 使用 pnpm/action-setup@v2
+          
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18.20.3'
           cache: 'pnpm'
-          
-      - name: Install pnpm # 安装 pnpm
-        uses: pnpm/action-setup@v2 # 使用 pnpm/action-setup@v2        
 
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: npm run install --frozen-lockfile
         
       - name: 清理旧的构建输出
         run: rm -rf src/.vuepress/dist
@@ -35,7 +36,7 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192 # 设置 Node.js 内存
         run: |-
-          pnpm build
+          npm run build
           > src/.vuepress/dist/.nojekyll
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4 
