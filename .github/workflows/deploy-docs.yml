@@ -26,7 +26,10 @@ jobs:
         with:
           node-version: '18'
           cache: 'pnpm'
-
+          
+      - name: 安装依赖
+        run: pnpm install
+        
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
 
