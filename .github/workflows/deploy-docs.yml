@@ -3,6 +3,7 @@ name: 部署文档
 on:
   push:
     branches:
+      # 确保这是你正在使用的分支名称
       - main
 
 jobs:
@@ -10,34 +11,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3 # 检出代码
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.PAT_TOKEN }}
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
-          submodules: true # 检出子模块
+          submodules: true
 
-      - name: Install pnpm # 安装 pnpm
-        uses: pnpm/action-setup@v2 # 使用 pnpm/action-setup@v2
-
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+          
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18.20.3"
-          cache: "pnpm"
+          node-version: '18'
+          cache: 'pnpm'
 
       - name: 安装依赖
-        run: pnpm install
-
-      - name: 清理旧的构建输出
-        run: rm -rf src/.vuepress/dist
+        run: pnpm install --frozen-lockfile
 
       - name: 构建文档
         env:
-          NODE_OPTIONS: --max_old_space_size=8192 # 设置 Node.js 内存
-        run: |
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
           pnpm build
-          touch src/.vuepress/dist/.nojekyll
+          > src/.vuepress/dist/.nojekyll
+
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -45,4 +44,3 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
           token: ${{ secrets.PAT_TOKEN }}
-          clean: true
