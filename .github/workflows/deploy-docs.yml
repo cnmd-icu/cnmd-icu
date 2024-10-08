@@ -22,7 +22,7 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.20.3'
+          node-version: '20.18.0'
           cache: 'pnpm'
 
       - name: 安装依赖
