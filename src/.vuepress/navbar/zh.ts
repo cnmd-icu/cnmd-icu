@@ -4,7 +4,7 @@ export default navbar([
   "/",
   { text: "导航", icon: "discover", link: "demo/" },
   {
-    text: "笔记分类",
+    text: "笔记",
     icon: "edit",
     children: [
       {
