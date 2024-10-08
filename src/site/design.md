@@ -15,13 +15,13 @@ tag:
 
 ## 工具类
 
-<MyLink :links="tools"/>
+<!-- <MyLink :links="tools"/> -->
 
 ## 设计类
 
-<MyLink :links="design"/>
+<!-- <MyLink :links="design"/>
 
 <script setup lang="ts">
 import MyLink from "@MyLink";
 import { design ,tools} from "@Design";
-</script>
+</script> -->
