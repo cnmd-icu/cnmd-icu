@@ -2,7 +2,7 @@
 title: 幻灯片页
 icon: slides
 date: 2020-01-01
-layout: Slide
+# layout: Slide
 index: false
 ---
 

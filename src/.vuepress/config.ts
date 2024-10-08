@@ -34,26 +34,6 @@ export default defineUserConfig({
           },
         },
       },
-      esbuild: {
-        pure: ["console.log", "debugger"],
-      },
-      build: {
-        outDir: "dist",
-        chunkSizeWarningLimit: 1500, // 代码分割警告限制
-        rollupOptions: {
-          output: {
-            chunkFileNames: "assets/js/[name]-[hash].js", // 代码分割文件名
-            entryFileNames: "assets/js/[name]-[hash].js", // 入口文件名
-            assetFileNames: "assets/[ext]/[name]-[hash].[ext]", // 静态资源文件名
-            manualChunks(id) {
-              if (id.includes("node_modules")) {
-                const moduleName = id.toString().match(/\/node_modules\/(?!.pnpm)(?<moduleName>[^\/]*)\//)?.groups!.moduleName;
-                return moduleName ?? "vender";
-              }
-            },
-          },
-        },
-      },
     },
   }),
   plugins: [
