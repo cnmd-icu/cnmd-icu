@@ -2,72 +2,41 @@
   "name": "cnmd.icu",
   "version": "1.0",
   "description": "个人分享e站",
-  "email": "2029364173@qq.com",
-  "keywords": [
-    "cnmd.icu",
-    "三个三",
-    "loaduser"
-  ],
-  "config": {
-    "author": "三个三",
-    "license": "CC BY-NC-SA 4.0",
-    "introduce": "我见青山多妩媚，料青山见我应如是。",
-    "homepage": "https://cnmd.icu",
-    "github": "https://github.com/cnmd-icu",
-    "addQQUrl": "https://qm.qq.com/q/MQw7B6OjEk",
-    "logo": "https://q1.qlogo.cn/g?b=qq&nk=2029364173&s=640",
-    "muisModelId": "2187512476"
-  },
-  "license": "MIT",
-  "type": "module",
   "scripts": {
-    "build": "vuepress-vite build src",
-    "clean-dev": "vuepress-vite dev src --clean-cache",
     "dev": "vuepress-vite dev src",
-    "update-package": "pnpm dlx vp-update"
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "pnpm dlx vp-update"
+  },
+  "dependencies": {
+    "axios": "1.7.7"
   },
   "devDependencies": {
     "@vue/repl": "^4.1.1",
-    "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/plugin-blog": "2.0.0-rc.17",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.17",
-    "@vuepress/plugin-feed": "2.0.0-rc.17",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.15",
-    "@vuepress/plugin-pwa": "2.0.0-rc.17",
-    "@vuepress/plugin-shiki": "2.0.0-rc.17",
-    "@waline/client": "^3.1.3",
-    "chart.js": "^4.4.2",
-    "echarts": "^5.5.0",
-    "flowchart.ts": "^2.0.0",
-    "katex": "^0.16.10",
-    "mermaid": "^10.9.0",
-    "reveal.js": "^5.0.5",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vuepress": "2.0.0-rc.8",
-    "vuepress-plugin-comment2": "2.0.0-rc.25",
-    "vuepress-plugin-meting2": "1.4.1",
-    "vuepress-shared": "2.0.0-rc.25",
-    "vuepress-theme-hope": "2.0.0-rc.25"
+    "@vuepress/bundler-vite": "2.0.0-rc.17",
+    "@vuepress/helper": "2.0.0-rc.52",
+    "@vuepress/plugin-copyright": "2.0.0-rc.52",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.52",
+    "@vuepress/plugin-feed": "2.0.0-rc.52",
+    "@vuepress/plugin-notice": "2.0.0-rc.52",
+    "@vuepress/plugin-photo-swipe": "2.0.0-rc.52",
+    "@vuepress/plugin-prismjs": "2.0.0-rc.52",
+    "@vuepress/plugin-pwa": "2.0.0-rc.52",
+    "@vuepress/plugin-redirect": "2.0.0-rc.52",
+    "@vuepress/plugin-revealjs": "2.0.0-rc.52",
+    "@vuepress/plugin-watermark": "2.0.0-rc.52",
+    "chart.js": "^4.4.4",
+    "echarts": "^5.5.1",
+    "katex": "0.16.11",
+    "sandpack-vue3": "3.1.12",
+    "sass": "^1.79.4",
+    "vue": "^3.5.11",
+    "vuepress": "2.0.0-rc.17",
+    "vuepress-theme-hope": "2.0.0-rc.58"
   },
-  "dependencies": {
-    "@moefy-canvas/core": "^0.5.2",
-    "@moefy-canvas/theme-popper": "^0.5.2",
-    "aplayer": "^1.10.1",
-    "axios": "^1.6.8",
-    "deepmerge-ts": "^5.1.0",
-    "hls.js": "^1.5.7",
-    "http-proxy-middleware": "^2.0.6",
-    "vuepress-plugin-oh-my-live2d": "0.6.0"
-  },
-  "packageManager": "pnpm@8.15.3",
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@types/react",
-        "react",
-        "react-dom"
-      ]
-    }
+  "packageManager": "pnpm@9.11.0",
+  "engines": {
+    "node": ">=20"
   }
 }

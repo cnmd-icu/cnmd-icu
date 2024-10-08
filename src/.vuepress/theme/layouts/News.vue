@@ -16,23 +16,22 @@
 
 <script setup lang="ts">
 import { computed, resolveComponent } from "vue";
-import { usePageData } from "vuepress/client";
-import BlogWrapper from "@theme-hope/modules/blog/components/BlogWrapper";
-import DropTransition from "@theme-hope/components/transitions/DropTransition";
-import { useDarkmode } from "@theme-hope/modules/outlook/composables/index";
 import { useBlogType } from '@vuepress/plugin-blog/client'
-import type { ArticleInfo } from "vuepress-theme-hope";
+import { usePageData } from "vuepress/client";
 import SkipLink from "@theme-hope/components/SkipLink";
+import BlogWrapper from "@theme-hope/modules/blog/components/BlogWrapper";
+import {DropTransition} from "@theme-hope/components/transitions/DropTransition";
+import { useDarkmode } from "@theme-hope/modules/outlook/composables/index";
 import NewsList from "../components/NewsList.vue";
 
-const news = useBlogType<ArticleInfo>("news");
+const news = useBlogType<Record<string, unknown>>("news");
 const page = usePageData();
-const items = computed(() => (news.value ? news.value.items : null));
+const items = computed(() => (news.value ? news.value.items : null)) as any;
 const { isDarkmode } = useDarkmode();
 const commentService = computed(() =>
   hasGlobalComponent("CommentService") ? "CommentService" : null
 );
-const hasGlobalComponent = (componentName) => {
+const hasGlobalComponent = (componentName: string) => {
   return !!resolveComponent(componentName);
 };
 </script>

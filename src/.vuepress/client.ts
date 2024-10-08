@@ -1,16 +1,23 @@
-import { onMounted } from "vue";
+// .vuepress/client.ts
 import { defineClientConfig } from "vuepress/client";
-import "vuepress-theme-hope/presets/bounce-icon.scss";
-import NotFound from "./theme/layouts/NotFound.vue";
-import Layout from "./theme/layouts/Layout.vue";
-import News from "./theme/layouts/News.vue";
+import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunningTime.js";
+import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentNavbar.js";
 import Wormhole from "./theme/components/Wormhole";
 import Travelling from "./theme/components/Travelling";
-import packageJson from "../../package.json";
+import NotFound from "./theme/layouts/NotFound.vue";
+// import Layout from "./theme/layouts/Layout.vue";
+import News from "./theme/layouts/News.vue";
+
+import "@vuepress/helper/normalize.css";
+import "vuepress-theme-hope/presets/round-blogger-avatar.scss";
+import "vuepress-theme-hope/presets/shinning-feature-panel.scss";
+import "vuepress-theme-hope/presets/bounce-icon.scss";
+// import "vuepress-theme-hope/presets/hide-navbar-icon.scss";
+// import "vuepress-theme-hope/presets/hide-sidebar-icon.scss";
+import "vuepress-theme-hope/presets/hr-driving-car.scss";
+
 export default defineClientConfig({
-  // 你可以在这里覆盖或新增布局
   layouts: {
-    Layout,
     NotFound,
     News,
   },
@@ -19,17 +26,11 @@ export default defineClientConfig({
     app.component("Travelling", Travelling);
   },
   setup: () => {
-    onMounted(() => {
-      console.log(
-        `%c 欢迎光临 ✨${packageJson.config.author}的e站 v${packageJson.version}✨ %c ✨${packageJson.config.homepage}✨ %c\n
-               你，对，你，就是你\n
-                  🍻- ( ゜- ゜)つロ 乾杯~🍻\n
-                          ---- 最是春风留不住，徒留我孤直。\n
-                                  欲寄彩笺兼尺素，山长水阔知何处？\n`,
-        `background: #eb507e; padding:5px; font-size:12px; color: #f9f4dc;`,
-        `background: #030307; padding:5px; font-size:12px; color:#fff;`,
-        `color: #51c4d3; font-size:12px;`
-      );
+    setupRunningTimeFooter(new Date("2023-01-20"), { "/": "本站已运行 :day 天 :hour 小时 :minute 分钟 :second 秒" }, true);
+    setupTransparentNavbar({
+      type: "blog-homepage",
+      light: "#eee",
+      dark: "#fff",
     });
   },
 });

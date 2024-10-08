@@ -1,11 +1,11 @@
 <template>
   <div id="article-list" class="vp-article-list">
-    <h3>{{hitokotoContent}}</h3>
+    <!-- <h3>{{hitokotoContent}}</h3> -->
+     <img class="news-top-img" src="/assets/background/1.png" alt="news-top" />
     <p class="sub-title" :data-item-count="String(items.length)">
-      共{{ items.length }}条碎碎念~ (｡♥‿♥｡)
+      共{{ items.length }}条说说~ (｡♥‿♥｡)
     </p>
     <figure>
-      <div style="font-size: small;"><p>{{visitorInfo}}</p></div>
     </figure>
     <template v-if="currentArticles.length">
       <template v-for="({ info, path }, index) in currentArticles">
@@ -24,20 +24,19 @@
   </div>
 </template>
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from "vue";
+import { computed, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import DropTransition from "@theme-hope/components/transitions/DropTransition";
-import type { Article } from '@vuepress/plugin-blog/client';
-import Pagination from "@theme-hope/modules/blog/components/Pagination";
 import { EmptyIcon } from "@theme-hope/modules/blog/components/icons/index";
 import { useBlogOptions } from "@theme-hope/modules/blog/composables/index";
-import type { ArticleInfo } from "vuepress-theme-hope";
+import { DropTransition } from "@theme-hope/components/transitions/DropTransition";
+import Pagination from "@theme-hope/modules/blog/components/Pagination";
 import NewsItem from "./NewsItem.vue";
-import { HitokotoApi } from "../../plugins/vuepress-plugin-hitokoto/client/hitokoto-api";
+
 declare const SUPPORT_PAGEVIEW: boolean;
 
+
 const props = defineProps<{
-  items: Article<ArticleInfo>[];
+  items: any[];
 }>();
 const route = useRoute();
 const router = useRouter();
@@ -59,50 +58,7 @@ const updatePage = (page: number) => {
   else query["page"] = page.toString();
   void router.push({ path: route.path, query });
 };
-const hitokotoContent = ref('');
-const visitorInfo = ref({});
 
-// 获取一言
-//获取访客信息
-(async function () {
-  const res = await HitokotoApi.request();
-  if (res.status == 200) {
-    hitokotoContent.value = res.data.hitokoto;
-  }
-   const res2 = await HitokotoApi.requestVisitorInfo();
-  if (res2.data.success) {
-    visitorInfo.value = res2.data;
-  }
-})();
-onMounted(() => {
-  const { page } = route.query;
-  updatePage(page ? Number(page) : 1);
-  if (SUPPORT_PAGEVIEW)
-    if (SUPPORT_PAGEVIEW) {
-      void import(
-        /* webpackChunkName: "pageview" */ "vuepress-plugin-comment2/pageview"
-      ).then(({ updatePageview }) => {
-        updatePageview();
-      });
-    }
-  watch(currentPage, () => {
-    // list top border distance
-    const articleList = document.querySelector("#article-list");
-    if (articleList) {
-      const distance = articleList.getBoundingClientRect().top + window.scrollY;
-      setTimeout(() => {
-        window.scrollTo(0, distance);
-      }, 100);
-    }
-  });
-  // FIXME: Workaround for https://github.com/vuepress/vuepress-next/issues/1249
-  watch(
-    () => route.query,
-    ({ page }) => {
-      updatePage(page ? Number(page) : 1);
-    }
-  );
-});
 </script>
 <style lang="scss" scoped>
 h3 {
@@ -152,8 +108,11 @@ figure {
   transition: transform var(--vp-tt);
 }
 .news-top-img {
+  width: 100%;
+  height: 300px;
   overflow: hidden;
   border-radius: 8px;
+  object-fit: cover;
 }
 .news-top-img:hover {
   box-shadow: 2px 2px 10px 0 var(--card-shadow);

@@ -13,7 +13,4 @@ export const friends: LinkData[] = [
     link: "https://liubing.me/",
   },
 ];
-export const invalid: LinkData[] = [
-  
-  
-];
+export const invalid: LinkData[] = [];

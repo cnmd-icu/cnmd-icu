@@ -32,12 +32,9 @@ import {
   usePageAuthor,
   useThemeLocaleData,
 } from "@theme-hope/composables/index";
-// import { useRouter } from "vue-router";
 import { show_runtime } from "../utils/time";
-// import { ref } from "vue";
 import { useDarkmode } from "@theme-hope/modules/outlook/composables/index";
 const dartmode = useDarkmode();
-
 const wormhole = computed(() => {
   return dartmode.status.value == "dark"
     ? "https://img.foreverblog.cn/wormhole_3.gif"
@@ -73,18 +70,13 @@ const copyright = computed(() =>
     ? `Copyright © 2024-${new Date().getFullYear()} ${author.value[0].name}`
     : false
 );
-// const bgImage = ref("");
-
-// onMounted(() => {
-//   const defaultHeroBgImagePath = window.localStorage.getItem("bgImage");
-//   bgImage.value = `url(${defaultHeroBgImagePath})`;
-// });
 </script>
 
 <style lang="scss">
-.footer-wrapper {
-  //background-image: v-bind(bgImage);
-}
+// .footer-wrapper {
+  // margin-top: 50px;
+  // background-color: var(--color-transition);
+// }
 
 .footer-wrapper:before {
   content: "";
@@ -93,7 +85,7 @@ const copyright = computed(() =>
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 0;
 }
 
 [data-theme="light"] .footer-wrapper:before {
@@ -128,7 +120,7 @@ const copyright = computed(() =>
     background var(--color-transition), padding var(--transform-transition);
 
   @media (max-width: hope-config.$tablet) {
-    z-index: 2;
+    z-index: 50;
     padding-inline-start: 2rem;
   }
 

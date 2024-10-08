@@ -1,2 +1,4 @@
 // export * from "./en.js";
-export * from "./zh.js";
+import navbar from "./zh";
+
+export default navbar;

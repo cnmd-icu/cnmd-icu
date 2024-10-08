@@ -1,6 +1,6 @@
-import { App, PageOptions, PluginFunction } from "vuepress";
+import { PluginFunction } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
-import { BackgroundOptions,CanvasPluginType } from "./type";
+import { BackgroundOptions, CanvasPluginType } from "./type";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -16,4 +16,4 @@ const canvasPlugin = (options?: BackgroundOptions): PluginFunction => {
     };
   };
 };
-export { canvasPlugin, CanvasPluginType, };
+export { canvasPlugin, CanvasPluginType };

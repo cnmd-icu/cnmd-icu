@@ -3,6 +3,7 @@ title: 主要功能与配置演示
 article: false
 index: false
 icon: discover
+footer: false
 category:
   - 使用指南
 ---

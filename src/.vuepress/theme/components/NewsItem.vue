@@ -7,9 +7,9 @@
     >
       <div class="news-item-content">
         <div class="info-row">
-          <img class="avatar" src="/assets/avatar.webp" />
+          <img class="avatar" :src="config.author.avatar" />
           <div>
-            <a href="/intro"><span class="name">三个三</span></a>
+            <a href="/intro"><span class="name">{{config.author.name}}</span></a>
             <div class="page-info" v-if="pinfo">
               <DateInfo v-bind="pinfo" />
               <PageViewInfo v-bind="pinfo" />
@@ -21,7 +21,6 @@
         <hr class="vp-article-hr" />
         <slot name="excerpt" v-bind="{ excerpt }">
           <template v-if="excerpt">
-            <!-- <div class="vp-article-excerpt" v-html="excerpt"></div> -->
             <Content :path="routePath" />
           </template>
         </slot>
@@ -34,41 +33,30 @@
 </template>
 
 <script setup lang="ts">
+import { toRef ,computed} from "vue";
+import { Content } from "vuepress/client";
+import { useRouter } from "vue-router";
+import { ArticleInfoData } from "vuepress-theme-hope/shared";
 import { useArticleInfo } from "@theme-hope/modules/blog/composables/index";
 import DateInfo from "@theme-hope/modules/info/components/DateInfo";
 import PageViewInfo from "@theme-hope/modules/info/components/PageViewInfo";
 import TagInfo from "@theme-hope/modules/info/components/TagInfo";
 import WordInfo from "@theme-hope/modules/info/components/WordInfo";
-import { toRef } from "vue";
-import type { ArticleInfo } from "vuepress-theme-hope";
-import { Content } from "vuepress/client";
-import { useRouter } from "vue-router";
-import "vuepress-theme-hope/client/modules/info/styles/page-info.scss";
-import { computed } from "vue";
+import config from "../../data/config";
+
 interface Articles {
-  /**
-   * Article path
-   *
-   * 文章路径
-   */
   path: string;
-  /**
-   * Article information
-   *
-   * 文章信息
-   */
-  info: ArticleInfo;
+  info: ArticleInfoData;
 }
 const props = defineProps<Articles>() as Articles;
 const articleInfo = toRef(props, "info");
 const { info: pageInfo } = useArticleInfo(props);
 const {
-  ["t" /* ArticleInfoType.title */]: title,
-  ["e" /* ArticleInfoType.excerpt */]: excerpt,
+  ["t"]: title,
+  ["e"]: excerpt,
 } = articleInfo.value;
-const pinfo = pageInfo.value;
+const pinfo = pageInfo.value as ArticleInfoData;
 const router = useRouter();
-// 2024年02月21日15:24:10 更改routeName为routePath 因为Content组件变化
 const route = router.resolve(props.path);
 const routePath = computed(() => (route ? route.path.toString() : ""));
 </script>
@@ -106,11 +94,11 @@ const routePath = computed(() => (route ? route.path.toString() : ""));
   }
 }
 [data-theme="dark"] .tag {
-  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-image: linear-gradient(to right, #282a2c 0%, #517fa4 100%);
   color: var(--text-color);
 }
 [data-theme="light"] .tag {
-  background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
+  background-image: linear-gradient(to right, #cbd6e4 0%, #537895 100%);
   color: #fff;
 }
 .vp-article-item {

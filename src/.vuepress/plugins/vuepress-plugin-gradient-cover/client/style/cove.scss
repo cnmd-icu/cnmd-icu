@@ -12,6 +12,7 @@
   }
 }
 .page-bg {
+  -webkit-user-select: none;
   user-select: none;
   position: fixed;
   top: 0;
@@ -42,7 +43,7 @@
 .page-bg::after {
   content: "";
   position: fixed;
-  z-index: 2;
+  z-index: -1;
   left: 0;
   top: 0;
   width: 100vw;

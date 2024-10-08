@@ -2,17 +2,22 @@
   "compilerOptions": {
     "moduleResolution": "bundler", // 指定模块解析策略 "node" | "classic" | "modern" | "bundler"
     "strict": true, // 启动所有严格类型检查选项 true | false 
-    "forceConsistentCasingInFileNames": false, // 强制在文件名中使用一致的大小写 true | false
+    "forceConsistentCasingInFileNames": true, // 强制在文件名中使用一致的大小写 true | false
     "esModuleInterop": true, // 生成的模块是 esmodule，并且允许使用 import = require() 语法 true | false
     "isolatedModules": true, // 使每个文件都成为一个独立的模块 true | false
     "module": "esnext", // 指定生成哪个模块系统代码 "commonjs" | "amd" | "umd" | "system" | "es6" | "es2015" | "esnext"
-    "target": "ES2020", // 指定 ECMAScript 目标版本 "ES3" | "ES5" | "ES6" | "ES2015" | "ES2016" | "ES2017" | "ES2018" | "ES2019" | "ES2020" | "ESNext"
+    "target": "ESNext", // 指定 ECMAScript 目标版本 "ES3" | "ES5" | "ES6" | "ES2015" | "ES2016" | "ES2017" | "ES2018" | "ES2019" | "ES2020" | "ESNext"
     "baseUrl": "./", // 用于解析非相对模块名称的基目录
     "paths": {
-      "@/*": ["src/*"],
-      "@theme-hope/*": ["node_modules/vuepress-theme-hope/lib/client/*"],
-      "vuepress-theme-hope/*": ["node_modules/vuepress-theme-hope/lib/*"],
-      "vuepress-shared/*":["node_modules/vuepress-shared/lib/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@theme-hope/*": [
+        "node_modules/vuepress-theme-hope/lib/client/*"
+      ],
+      "vuepress-theme-hope/*": [
+        "node_modules/vuepress-theme-hope/lib/*"
+      ],
     },
     "types": [
       "vuepress/client-types"
@@ -24,5 +29,14 @@
     "src/.vuepress/**/*.js",
     "src/.vuepress/**/*.vue"
   ],
-  "exclude": ["node_modules", "dist", "draft"]
+  "exclude": [
+    "node_modules",
+    "node_modules/**",
+    ".vuepress/dist",
+    ".vuepress/.temp",
+    ".vuepress/.cache",
+    "dist",
+    "draft",
+    ".history",
+  ]
 }

@@ -1,6 +1,6 @@
-import { defineClientConfig} from "vuepress/client";
+import { defineClientConfig } from "vuepress/client";
 import { onMounted } from "vue";
-import ribbon from "../components/ribbon";
+import ribbon from "../components/ribbon.js";
 import figure from "../components/figure";
 import { BackgroundOptions } from "../type";
 declare const backgroundOptions: BackgroundOptions;
@@ -20,11 +20,7 @@ export default defineClientConfig({
           figure();
           break;
         case "ribbon":
-          ribbon(
-            backgroundOptions.ribbonOption?.zIndex,
-            backgroundOptions.ribbonOption?.alpha,
-            backgroundOptions.ribbonOption?.size
-          );
+          ribbon(backgroundOptions.ribbonOption?.zIndex, backgroundOptions.ribbonOption?.alpha, backgroundOptions.ribbonOption?.size);
           break;
         default:
           break;

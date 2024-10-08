@@ -5,6 +5,7 @@ date: 1978-01-09
 index: true
 timeline: false
 article: false
+footer: false
 ---
 
 :::info
