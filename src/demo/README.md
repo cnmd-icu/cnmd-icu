@@ -1,7 +1,7 @@
 ---
 title: 主要功能与配置演示
 article: false
-index: false
+index: true
 icon: discover
 footer: false
 category:

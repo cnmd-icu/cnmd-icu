@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "@vue/repl": "^4.1.1",
-    "@vuepress/bundler-vite": "2.0.0-rc.17",
     "@vuepress/helper": "2.0.0-rc.52",
+    "@vuepress/bundler-vite": "2.0.0-rc.17",
     "@vuepress/plugin-copyright": "2.0.0-rc.52",
     "@vuepress/plugin-docsearch": "2.0.0-rc.52",
     "@vuepress/plugin-feed": "2.0.0-rc.52",
