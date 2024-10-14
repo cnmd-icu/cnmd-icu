@@ -2,7 +2,7 @@
 containerClass: home
 home: true
 layout: BlogHome
-icon: home
+icon: material-symbols:home
 title: 主页
 heroType: image
 heroImage: https://q1.qlogo.cn/g?b=qq&nk=2029364173&s=640

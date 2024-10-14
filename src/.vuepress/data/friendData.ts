@@ -5,12 +5,13 @@ export interface LinkData {
   link: string;
 }
 
-export const friends: LinkData[] = [
+const linkDatas: LinkData[] = [
   {
-    name: "Bing🐣",
-    desc: "基于VuePress的个人博客，记录日常开发问题",
-    icon: "https://liubing.me/logo.png",
-    link: "https://liubing.me/",
+    name: "三个三",
+    desc: "基于vue搭建的个人主页",
+    icon: "./logo.svg",
+    link: "https://www.cnmd.icu/",
   },
 ];
-export const invalid: LinkData[] = [];
+
+export default linkDatas;

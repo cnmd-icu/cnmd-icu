@@ -6,14 +6,12 @@ article: false
 ---
 
 ## 小伙伴
+<MyCoverLink/>
 
-<MyCoverLink type="friend"/>
 <script setup lang="ts">
-import MyCoverLink from "@MyCoverLink";
+  import MyCoverLink from "@/components/MyCoverLink.vue";
 </script>
 
-## 失效链接
-<MyCoverLink type="invalid"/>
 
 ## 本站信息如下
 

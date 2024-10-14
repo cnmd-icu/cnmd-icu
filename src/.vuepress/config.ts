@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import { viteBundler } from "@vuepress/bundler-vite";
+import viteCompression from "vite-plugin-compression";
 //自定义插件
 import { canvasPlugin, CanvasPluginType } from "./plugins/vuepress-plugin-canvas";
 import { gradientCoverPlugin } from "./plugins/vuepress-plugin-gradient-cover/index.js";
@@ -16,9 +17,7 @@ export default defineUserConfig({
   theme: theme,
   port: 8080,
   alias: {
-    "@MyLink": path.resolve(__dirname, "./components/Mylink.vue"),
-    "@MyCoverLink": path.resolve(__dirname, "./components/MyCoverLink.vue"),
-    "@Config": path.resolve(__dirname, "./data/config.ts"),
+    "@": path.resolve(__dirname, "./"),
   },
   bundler: viteBundler({
     viteOptions: {
@@ -34,6 +33,13 @@ export default defineUserConfig({
           },
         },
       },
+      plugins: [
+        viteCompression({
+          ext: ".gz",
+          algorithm: "gzip",
+          deleteOriginFile: false,
+        }),
+      ],
     },
   }),
   plugins: [
@@ -48,5 +54,5 @@ export default defineUserConfig({
       },
     }),
   ],
-  shouldPrefetch: true,
+  shouldPrefetch: false,
 });

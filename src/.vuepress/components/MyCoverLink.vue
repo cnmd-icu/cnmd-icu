@@ -3,8 +3,7 @@
     <template v-if="linkDatas.length > 0" v-for="(item, index) in linkDatas" :key="index">
       <div class="link-card">
         <a class="card-body" :href="item.link" target="_blank">
-          <img class="link-picture" :src="`https://s0.wp.com/mshots/v1/${item.link}?w=323px&h=200px`" alt=""
-            rel="noopener noreferrer external" />
+          <iframe class="link-picture" :src="item.link" frameborder="0" scrolling="no"></iframe>
           <div class="card-content">
             <div class="link-avatar my-auto">
               <img :src="item.icon" onerror='this.onerror=null,this.src=this.srcset="/assets/avatar.webp"' />
@@ -20,25 +19,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import { friends, invalid, LinkData } from "../data/friendData";
-const props = defineProps({
-  type: {
-    type: String,
-    require: true,
-  },
-});
-let linkDatas: LinkData[];
-switch (props.type) {
-  case "friend":
-    linkDatas = friends;
-    break;
-  case "invalid":
-    linkDatas = invalid;
-    break;
-  default:
-    linkDatas = [];
-    break;
-}
+import linkDatas  from "../data/friendData";
+
 </script>
 <style lang="scss" scoped>
 .link-card {
@@ -55,12 +37,10 @@ switch (props.type) {
   overflow: hidden;
   min-height: 10rem;
   color: inherit;
-  // background-image: linear-gradient(to right, #434343 0%, black 100%);
   background-image: linear-gradient(to top,
     #7873f5 0%,
     #97d9e1 33%,
     #ec77ab 100%);
-  // background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
 
   box-shadow: 1px 1px 8px var(--card-shadow);
   cursor: pointer;

@@ -28,12 +28,8 @@ export default MyTheme({
   /**
    * -------------------------- 主题配置 --------------------------
    **/
-  iconAssets: [
-    // 默认：
-    "//at.alicdn.com/t/c/font_2410206_5vb9zlyghj.css",
-    // 自己的
-    "//at.alicdn.com/t/c/font_3941380_40oya9bsklp.css",
-  ],
+  // iconPrefix: "ify-",
+  iconAssets: "iconify",
   darkmode: "switch",
   externalLinkIcon: true,
   fullscreen: true,
@@ -60,7 +56,8 @@ export default MyTheme({
   hideSiteNameOnMobile: false,
   // ------------- 侧边栏 -------------
   sidebar: sidebar,
-  sidebarSorter: ["readme", "order", "title", "filename"],
+  // 侧边栏排序 readme:README.md优先，or:正序在前并按其值升序排列，负序在后并按其值降序排列,  date: 按日期升序排序, title: 按标题字母顺序排序
+  sidebarSorter: ["readme", "order", "date", "title", "filename"],
   headerDepth: 2,
   // ------------- 路径导航 -------------
   breadcrumb: true,
@@ -69,7 +66,8 @@ export default MyTheme({
   nextLink: true,
   // ------------- 标题 -------------
   titleIcon: true,
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  //自定义当前页面的页面信息。
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word", "PageView"],
   // ------------- Meta -------------
   lastUpdated: true,
   contributors: true,
@@ -98,6 +96,7 @@ export default MyTheme({
     sidebarDisplay: "mobile",
     timeline: "闲云潭影日悠悠，物换星移几度秋。",
     articlePerPage: 10,
+    //文章列表中展示的文章信息 Author:作者 Original:原创 Date:日期 PageView:浏览量 Category:分类 ReadingTime:阅读时间
     articleInfo: ["Author", "Original", "Date", "PageView", "Category", "ReadingTime"],
   },
   encrypt: {
@@ -204,7 +203,6 @@ export default MyTheme({
         jsfiddle: true,
       },
     },
-    searchPro: true,
     docsearch: {
       appId: "OPKR5M4ODX",
       apiKey: "86538b8464510cb1211d679f6d18b7d2",
@@ -258,6 +256,8 @@ export default MyTheme({
       cacheHTML: true,
       appendBase: true,
       cacheImage: true,
+      maxSize: 1024 * 1024 * 5,
+      maxImageSize: 1024 * 1024 * 5,
       update: "hint",
       apple: {
         icon: "/assets/pwa/apple-icon-152.png",

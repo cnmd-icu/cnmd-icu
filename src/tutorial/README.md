@@ -1,6 +1,6 @@
 ---
 title: "常用配置教程"
-icon: "software"
+icon: "material-symbols:assignment-add-outline"
 date: 1978-01-09
 index: true
 timeline: false
@@ -13,4 +13,3 @@ footer: false
 :::
 
 --- 
-<AutoCatalog />
