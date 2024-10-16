@@ -115,18 +115,21 @@ export default sidebar({
           icon: "mdi:android",
           prefix: "Android/",
           link: "Android/",
+          children: "structure",
         },
         {
           text: "Java",
           icon: "mdi:coffee",
           prefix: "Java/",
           link: "Java/",
+          children: "structure",
         },
         {
           text: "Python",
           icon: "mdi:language-python",
           prefix: "Python/",
           link: "Python/",
+          children: "structure",
         },
         {
           text: "数据库",
