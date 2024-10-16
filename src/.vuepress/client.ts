@@ -5,7 +5,7 @@ import { setupTransparentNavbar } from "vuepress-theme-hope/presets/transparentN
 import Wormhole from "./theme/components/Wormhole";
 import Travelling from "./theme/components/Travelling";
 import NotFound from "./theme/layouts/NotFound.vue";
-// import Layout from "./theme/layouts/Layout.vue";
+import Layout from "./theme/layouts/Layout.vue";
 import News from "./theme/layouts/News.vue";
 
 import "@vuepress/helper/normalize.css";
@@ -18,6 +18,7 @@ import "vuepress-theme-hope/presets/hr-driving-car.scss";
 
 export default defineClientConfig({
   layouts: {
+    // Layout,
     NotFound,
     News,
   },

@@ -1,7 +1,10 @@
 <template>
   <SkipLink />
   <CommonWrapper :noSidebar="true">
-    <main class="page not-found" id="main-content" :style="background">
+    <main class="page not-found" id="main-content">
+      <div class="not-found-logo">
+        <img src="../../public/assets//background/404.svg" alt="logo" />
+      </div>
       <div class="not-found-content">
         <div class="not-found-hint">
           <p class="error-code" data-t="404">404</p>
@@ -12,21 +15,19 @@
         </div>
         <div class="actions">
           <button class="action-button left" @click="goBack">返回上一页</button>
-          <button class="action-button right" @click="navigate">
-            带我回家
-          </button>
+          <button class="action-button right" @click="navigate">带我回家</button>
         </div>
       </div>
     </main>
   </CommonWrapper>
 </template>
 <script setup lang="ts">
+import { ref, computed } from "vue";
 import { useRouteLocale } from "vuepress/client";
 import { useLink } from "vue-router";
 import CommonWrapper from "@theme-hope/components/CommonWrapper";
 import SkipLink from "@theme-hope/components/SkipLink";
 import { useThemeLocaleData } from "@theme-hope/composables/index";
-import { ref, computed } from "vue";
 
 const goBack = () => {
   window.history.go(-1);
@@ -41,27 +42,20 @@ const getMsg = () => {
   const messages = themeLocale.value.routeLocales["notFoundMsg"];
   return messages[Math.floor(Math.random() * messages.length)];
 };
-const images = ref(["404_bg_1.png", "404_bg_2.png"]);
-const background = computed(() => {
-  const randomIndex = Math.floor(Math.random() * images.value.length);
-  return {
-    backgroundImage: `url(/assets/images/${images.value[randomIndex]})`,
-  };
-});
-
 </script>
 <style scoped lang="scss">
 .page.not-found {
   z-index: 2;
   flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   @media (max-width: hope-config.$tablet) {
     align-items: center;
     background-position: top;
   }
+ 
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +65,17 @@ const background = computed(() => {
   padding: calc(var(--navbar-height) + 1rem) 6rem 1rem !important;
 
   text-align: center;
-
+  
+ .not-found-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
   .not-found-hint {
     padding: 2rem;
 
@@ -134,8 +138,7 @@ const background = computed(() => {
     height: 0.1em;
     line-height: 0.5em;
     width: 100%;
-    animation: scan 0.5s ease-in-out 275ms infinite alternate,
-      glitch-anim 0.3s ease-in-out infinite alternate;
+    animation: scan 0.5s ease-in-out 275ms infinite alternate, glitch-anim 0.3s ease-in-out infinite alternate;
     overflow: hidden;
     opacity: 0.7;
   }
@@ -209,8 +212,7 @@ const background = computed(() => {
     height: 0.5em;
     line-height: 0.1em;
     width: 100%;
-    animation: scan 665ms ease-in-out 0.59s infinite alternate,
-      glitch-anim 0.3s ease-in-out infinite alternate;
+    animation: scan 665ms ease-in-out 0.59s infinite alternate, glitch-anim 0.3s ease-in-out infinite alternate;
     overflow: hidden;
     opacity: 0.8;
   }

@@ -1,6 +1,7 @@
 ---
 date: 2023-04-06
 icon: question
+footer: false
 category:
   - 浏览器
 tag:

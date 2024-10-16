@@ -93,7 +93,7 @@ export default MyTheme({
       GitHub: config.links.github,
       Email: config.author.email,
     },
-    sidebarDisplay: "mobile",
+    sidebarDisplay: "mobile", //是否在侧边栏展示博主信息
     timeline: "闲云潭影日悠悠，物换星移几度秋。",
     articlePerPage: 10,
     //文章列表中展示的文章信息 Author:作者 Original:原创 Date:日期 PageView:浏览量 Category:分类 ReadingTime:阅读时间

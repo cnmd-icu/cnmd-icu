@@ -126,6 +126,11 @@
   opacity: 0.5 !important;
 }
 
+[aria-label][data-balloon-pos]:after {
+  font-family: system-ui;
+  background-color: var(--vp-c-accent-bg);
+}
+
 // 时间轴
 .timeline-wrapper {
   box-shadow: 0 1px 3px 1px var(--card-shadow);

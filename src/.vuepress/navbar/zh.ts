@@ -28,7 +28,7 @@ export default navbar([
     ],
   },
   {
-    text: "软件教程",
+    text: "开发工具教程",
     icon: "mdi:apple-keyboard-command",
     link: "/tutorial/",
   },
